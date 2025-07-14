@@ -27,44 +27,93 @@
 .card-green {
   grid-area: green;
   background: #7ce55e;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   border-radius: 24px;
+  position: relative;
+
 }
 .card-darkgreen {
   grid-area: darkgreen;
   background: #3da97a;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 1.8rem;
+  margin-left: 1.8rem;
   border-radius: 24px 0 24px 24px;
+  position: relative;
+  z-index: 2;
 }
+
 .card-darkgreen-extension {
   grid-area: darkgreen-ext;
   background: #3da97a;
   border-radius: 0 24px 24px 0;
-
+  position: relative;
+  z-index: 1;
 }
+.card-darkgreen-inner-corner {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #3da97a;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: #fff;
+      clip-path: circle(100% at 1.5rem 1.5rem);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
 .card-blue {
   grid-area: blue;
   background: #5bb3e6;
   border-radius: 24px 24px 0 24px;
+ 
 }
 .card-blue-extension {
   grid-area: blue-ext;
   background: #5bb3e6;
   border-radius: 0 24px 24px 0;
+  position: relative;
+  z-index: 1;
+}
+.card-blue-inner-corner {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #5bb3e6;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff; // match your page background
+    clip-path: circle(100% at 1.5rem 0rem);
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 .card-yellow {
   grid-area: yellow;
   background: #ffc04c;
-  margin-left: 1rem;
+  margin-left: 1.8rem;
   border-radius: 24px;
 }
 .card-pink {
   grid-area: pink;
   background: #f7a7df;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-top: 1.8rem;
+  margin-left: 1.8rem;
   border-radius: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .component-a-card {
