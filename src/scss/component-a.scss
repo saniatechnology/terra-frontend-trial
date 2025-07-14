@@ -1,0 +1,80 @@
+.component-a-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.component-a-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.component-a-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 2fr;
+  grid-template-rows: 3fr 2fr 4fr 3fr;
+  grid-template-areas:
+    "green darkgreen darkgreen darkgreen-ext"
+    "green darkgreen darkgreen pink"
+    "blue darkgreen darkgreen pink"
+    "blue blue-ext yellow pink";
+    height: 40rem;
+}
+
+.card-green {
+  grid-area: green;
+  background: #7ce55e;
+  margin-bottom: 1rem;
+  border-radius: 24px;
+}
+.card-darkgreen {
+  grid-area: darkgreen;
+  background: #3da97a;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-radius: 24px 0 24px 24px;
+}
+.card-darkgreen-extension {
+  grid-area: darkgreen-ext;
+  background: #3da97a;
+  border-radius: 0 24px 24px 0;
+
+}
+.card-blue {
+  grid-area: blue;
+  background: #5bb3e6;
+  border-radius: 24px 24px 0 24px;
+}
+.card-blue-extension {
+  grid-area: blue-ext;
+  background: #5bb3e6;
+  border-radius: 0 24px 24px 0;
+}
+.card-yellow {
+  grid-area: yellow;
+  background: #ffc04c;
+  margin-left: 1rem;
+  border-radius: 24px;
+}
+.card-pink {
+  grid-area: pink;
+  background: #f7a7df;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 24px;
+}
+
+.component-a-card {
+  color: #222;
+  font-size: 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+} 
