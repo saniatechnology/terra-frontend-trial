@@ -1,0 +1,59 @@
+@use "./common";
+
+.component-b-card {
+  background: #181818;
+  border-radius: 24px;
+  width: 30rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1.2rem 1.2rem 0.6rem 1.2rem;
+  margin: auto;
+}
+
+.component-b-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.terra-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.terra-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.component-b-footer {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hello-world {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #F58DD7 55%,
+    #2D9F66 45%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+  display: inline-block;
+}

@@ -1,16 +1,4 @@
-.component-a-wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 24px;
-}
-
-.component-a-title {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 24px;
-}
+@use "./common";
 
 .component-a-grid {
   display: grid;
@@ -21,12 +9,13 @@
     "green darkgreen darkgreen pink"
     "blue darkgreen darkgreen pink"
     "blue blue-ext yellow pink";
-    height: 40rem;
+  height: 40rem;
+  margin-bottom: 4rem;
 }
 
 .card-green {
   grid-area: green;
-  background: #7ce55e;
+  background: #7CE55E;
   margin-bottom: 1.8rem;
   border-radius: 24px;
   position: relative;
@@ -34,7 +23,7 @@
 }
 .card-darkgreen {
   grid-area: darkgreen;
-  background: #3da97a;
+  background: #2D9F66;
   margin-bottom: 1.8rem;
   margin-left: 1.8rem;
   border-radius: 24px 0 24px 24px;
@@ -44,7 +33,7 @@
 
 .card-darkgreen-extension {
   grid-area: darkgreen-ext;
-  background: #3da97a;
+  background: #2D9F66;
   border-radius: 0 24px 24px 0;
   position: relative;
   z-index: 1;
@@ -55,7 +44,7 @@
     left: 0;
     width: 1.5rem;
     height: 1.5rem;
-    background: #3da97a;
+    background: #2D9F66;
     z-index: 1;
     &::after {
       content: "";
@@ -70,13 +59,13 @@
   }
 .card-blue {
   grid-area: blue;
-  background: #5bb3e6;
+  background: #429ED6;
   border-radius: 24px 24px 0 24px;
  
 }
 .card-blue-extension {
   grid-area: blue-ext;
-  background: #5bb3e6;
+  background: #429ED6;
   border-radius: 0 24px 24px 0;
   position: relative;
   z-index: 1;
@@ -87,7 +76,7 @@
   left: 0;
   width: 1.5rem;
   height: 1.5rem;
-  background: #5bb3e6;
+  background: #429ED6;
   z-index: 1;
   &::after {
     content: "";
@@ -102,13 +91,13 @@
 }
 .card-yellow {
   grid-area: yellow;
-  background: #ffc04c;
+  background: #FDB335;
   margin-left: 1.8rem;
   border-radius: 24px;
 }
 .card-pink {
   grid-area: pink;
-  background: #f7a7df;
+  background: #F58DD7;
   margin-top: 1.8rem;
   margin-left: 1.8rem;
   border-radius: 24px;
