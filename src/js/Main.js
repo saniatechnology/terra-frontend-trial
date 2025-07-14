@@ -12,17 +12,31 @@ class Main{
         this.events()
     }
 
-    init(){
-
+    
+    init() {
         this.instances['collapsify'] = [];
-        this.instances['collapsify'][0]= new Collapsify({});
-
-
-        this.instances['RevealInstances'] = [];
-        this.DOM.revealItems.forEach((item,index) => {
-            this.instances['RevealInstances'][index](new RevealItem({ element: item }));
+        this.instances['collapsify'][0] = new Collapsify({
+            onSlideStart: (isOpen, contentID) => {
+                const buttons = document.querySelectorAll(`[data-collapsify-control='${contentID}']`);
+                buttons.forEach(button => {
+                    const arrow = button.querySelector(".c--accordion-a__item__hd__artwork");
+                    if (arrow) {
+                        if (isOpen) {
+                            arrow.style.transform = "translateY(25px) scale(1.8) rotate(180deg)";
+                        } else {
+                            arrow.style.transform = "translateY(25px) scale(1.8) rotate(0deg)";
+                        }
+                    }
+                });
+            }
         });
 
+        this.instances["RevealInstances"] = [];
+        this.DOM.revealItems.forEach((item, index) => {
+            this.instances["RevealInstances"][index] = new RevealItem({
+                element: item
+            });
+        });
     }
 
     events(){
