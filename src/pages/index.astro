@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import HeroA from '@components/hero/HeroA.astro';
 import ComponentA from '@components/trial-components/ComponentA.astro';
 import ComponentB from '@components/trial-components/ComponentB.astro';
+import { Image } from 'astro:assets';
 ---
 
 <Layout>
@@ -74,7 +75,7 @@ import ComponentB from '@components/trial-components/ComponentB.astro';
 		<div class="f--container f--container--tabletm-fluid u--pl-tabletm-2 u--pr-tabletm-2">
 			<div class="f--row">
 				<div class="f--col-6 f--offset-3 f--col-mobile-10 f--offset-mobile-1 u--text-align-center">
-					<img src="http://placeholder.terrahq.com/headshot.webp" alt="Smiling male team member">
+					<Image src="http://placeholder.terrahq.com/headshot.webp" alt="Smiling male team member" loading="lazy" width="320" height="320">
 				</div>
 			</div>
 		</div>
