@@ -23,10 +23,11 @@ It was a good opportunity to learn more about Astro and Terra's own tools; I fin
 
 ## Further work if I'd had more time
 
-- **Design improvements:**
+- **Design/UI/UX improvements:**
   - Thoroughly test responsiveness across different devices and screen sizes.
   - Thoroughly test design (fonts, colors, etc.) across different browsers and devices.
   - Unify CSS approach further (e.g. use Terra's design system for most of the project).
+  - Favicon.
 
 - **Accessibility improvements:**
   - Thoroughly test accessibility across different browsers, devices and accessibility needs.
