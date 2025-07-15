@@ -28,6 +28,7 @@
  */
 
 import gsap from "gsap";
+import { accessibleTabNav } from "@terrahq/helpers/accessibleTabNav";
 class Project {
   constructor() {
     this.DOM = {
@@ -41,6 +42,10 @@ class Project {
   async init() {
     console.log("Project initialized");
     try {
+      // Initialize accessibleTabNav
+      
+      accessibleTabNav();
+
       // Preload images and lotties
 
       if (this.DOM.images) {

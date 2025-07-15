@@ -23,12 +23,19 @@ import "@scss/style.scss";
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		
+		<button
+			class="js--trigger-focus"
+			data-focus-target="main-content"
+			tabindex="1"
+			style="position:absolute;left:0;top:0;z-index:1000;"
+		>
+			Skip to Main Content
+		</button>
 		<PreloaderA />
 		<HeaderA/>
 		
 		<div class="c--page-a">
-			<div class="c--page-a__ft-items">
+			<div class="c--page-a__ft-items" id="main-content">
 				<slot />
 			</div>
 			<div class="c--page-a__bg-items">
