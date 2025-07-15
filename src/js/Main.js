@@ -1,5 +1,6 @@
 import Collapsify from "@terrahq/collapsify";
 import RevealItem from "./modules/RevealItem";
+import { ScrollTrigger } from "gsap/all";
 class Main{
     constructor(){
         this.DOM = {
@@ -28,6 +29,13 @@ class Main{
                         }
                     }
                 });
+            },
+            onSlideEnd: () => {
+              ScrollTrigger.refresh();
+            },
+            onComplete: () => {
+                ScrollTrigger.refresh();
+                
             }
         });
 
