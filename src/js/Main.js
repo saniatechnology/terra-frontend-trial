@@ -49,10 +49,14 @@ class Main{
 
     events(){
         this.DOM.playBtn.addEventListener("click", () => {
-            console.log("Play button clicked");
+            if (window.WL && window.WL["sofaAnimation"]) {
+                window.WL["sofaAnimation"].play();
+            }
         });
         this.DOM.pauseBtn.addEventListener("click", () => {
-            console.log("Pause button clicked");
+            if (window.WL && window.WL["sofaAnimation"]) {
+                window.WL["sofaAnimation"].pause();
+            }
         });
     }
 }
