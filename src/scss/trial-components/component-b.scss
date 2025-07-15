@@ -57,3 +57,12 @@
   line-height: 1;
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  .component-b-card {
+    width: 100%;
+  }
+  .hello-world {
+    font-size: 3rem;
+  }
+}

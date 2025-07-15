@@ -17,7 +17,6 @@
 .card-green {
   grid-area: green;
   background: $color-d;
-  margin-bottom: 1.8rem;
   border-radius: 24px;
   position: relative;
 
@@ -25,8 +24,6 @@
 .card-darkgreen {
   grid-area: darkgreen;
   background: $color-e;
-  margin-bottom: 1.8rem;
-  margin-left: 1.8rem;
   border-radius: 24px 0 24px 24px;
   position: relative;
   z-index: 2;
@@ -93,14 +90,11 @@
 .card-yellow {
   grid-area: yellow;
   background: $color-g;
-  margin-left: 1.8rem;
   border-radius: 24px;
 }
 .card-pink {
   grid-area: pink;
   background: $color-i;
-  margin-top: 1.8rem;
-  margin-left: 1.8rem;
   border-radius: 24px;
   position: relative;
   z-index: 2;
@@ -117,3 +111,22 @@
   min-width: 0;
   min-height: 0;
 } 
+
+@media (max-width: 768px) {
+  .component-a-grid {
+    height: 30rem;
+  }
+  .component-a-card {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .component-a-grid {
+    height: 25rem;
+  }
+  .component-a-card {
+    font-size: 1rem;
+    padding: 16px;
+  }
+}
