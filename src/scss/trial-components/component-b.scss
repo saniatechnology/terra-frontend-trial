@@ -59,10 +59,13 @@
 }
 
 @media (max-width: 768px) {
-  .component-b-card {
-    width: 100%;
-  }
   .hello-world {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .component-b-card {
+    width: 100%;
   }
 }
