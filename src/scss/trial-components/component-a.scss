@@ -1,4 +1,5 @@
 @use "./common";
+@use "../../scss/style.scss" as *;
 
 .component-a-grid {
   display: grid;
@@ -15,7 +16,7 @@
 
 .card-green {
   grid-area: green;
-  background: #7CE55E;
+  background: $color-d;
   margin-bottom: 1.8rem;
   border-radius: 24px;
   position: relative;
@@ -23,7 +24,7 @@
 }
 .card-darkgreen {
   grid-area: darkgreen;
-  background: #2D9F66;
+  background: $color-e;
   margin-bottom: 1.8rem;
   margin-left: 1.8rem;
   border-radius: 24px 0 24px 24px;
@@ -33,7 +34,7 @@
 
 .card-darkgreen-extension {
   grid-area: darkgreen-ext;
-  background: #2D9F66;
+  background: $color-e;
   border-radius: 0 24px 24px 0;
   position: relative;
   z-index: 1;
@@ -44,7 +45,7 @@
     left: 0;
     width: 1.5rem;
     height: 1.5rem;
-    background: #2D9F66;
+    background: $color-e;
     z-index: 1;
     &::after {
       content: "";
@@ -59,13 +60,13 @@
   }
 .card-blue {
   grid-area: blue;
-  background: #429ED6;
+  background: $color-f;
   border-radius: 24px 24px 0 24px;
  
 }
 .card-blue-extension {
   grid-area: blue-ext;
-  background: #429ED6;
+  background: $color-f;
   border-radius: 0 24px 24px 0;
   position: relative;
   z-index: 1;
@@ -76,7 +77,7 @@
   left: 0;
   width: 1.5rem;
   height: 1.5rem;
-  background: #429ED6;
+  background: $color-f;
   z-index: 1;
   &::after {
     content: "";
@@ -91,13 +92,13 @@
 }
 .card-yellow {
   grid-area: yellow;
-  background: #FDB335;
+  background: $color-g;
   margin-left: 1.8rem;
   border-radius: 24px;
 }
 .card-pink {
   grid-area: pink;
-  background: #F58DD7;
+  background: $color-i;
   margin-top: 1.8rem;
   margin-left: 1.8rem;
   border-radius: 24px;
